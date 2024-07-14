@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEducate login/Signup</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+            </div>
+            <div class="social-icons">
+                <img src="image/fb.png" alt="#">
+                <img src="image/g.png" alt="#">
+                <img src="image/twit.png" alt="#">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" name="username" required> 
+                <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" onclick="fun()"><a href="web.html">Log In</a> </button>
+            </form>
+
+            <form  id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="Username"  name="username" required>
+                <input type="email" class="input-field" placeholder="Email Id"  name="email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
+                <input type="checkbox" class="check-box"><span>I agrres to the terms & conditions</span>
+                <button type="submit" class="submit-btn" onclick="fun1()"><a href="web.html">Signup</a> </button>
+            </form>    
+        </div>
+    </div>
+    <script src="js/login.js" defer></script> 
+</body>
+</html> 
